@@ -18,7 +18,7 @@ public class FizzBuzzTest {
     @Test
     public void shouldProcessInput() {
         // given
-        FizzBuzz fizzBuzz = new FizzBuzz();
+        FizzBuzz fizzBuzz = new FizzBuzz(3,5);
 
         // when
         String output = fizzBuzz.processNumber(1);
@@ -30,7 +30,7 @@ public class FizzBuzzTest {
     @Test
     public void shouldProcessInput_2() {
         // given
-        FizzBuzz fizzBuzz = new FizzBuzz();
+        FizzBuzz fizzBuzz = new FizzBuzz(3,5);
 
         // when
         String output = fizzBuzz.processNumber(2);
@@ -42,7 +42,7 @@ public class FizzBuzzTest {
     @Test
     public void shouldProcessInput_3() {
         // given
-        FizzBuzz fizzBuzz = new FizzBuzz();
+        FizzBuzz fizzBuzz = new FizzBuzz(3,5);
 
         // when
         String output = fizzBuzz.processNumber(3);
@@ -54,7 +54,7 @@ public class FizzBuzzTest {
     @Test
     public void shouldProcessInput_4() {
         // given
-        FizzBuzz fizzBuzz = new FizzBuzz();
+        FizzBuzz fizzBuzz = new FizzBuzz(3,5);
 
         // when
         String output = fizzBuzz.processNumber(4);
@@ -66,7 +66,7 @@ public class FizzBuzzTest {
     @Test
     public void shouldProcessInput_5() {
         // given
-        FizzBuzz fizzBuzz = new FizzBuzz();
+        FizzBuzz fizzBuzz = new FizzBuzz(3,5);
 
         // when
         String output = fizzBuzz.processNumber(5);
@@ -78,7 +78,7 @@ public class FizzBuzzTest {
     @Test
     public void shouldProcessInput_6() {
         // given
-        FizzBuzz fizzBuzz = new FizzBuzz();
+        FizzBuzz fizzBuzz = new FizzBuzz(3,5);
 
         // when
         String output = fizzBuzz.processNumber(6);
@@ -90,7 +90,7 @@ public class FizzBuzzTest {
     @Test
     public void shouldProcessInput_10() {
         // given
-        FizzBuzz fizzBuzz = new FizzBuzz();
+        FizzBuzz fizzBuzz = new FizzBuzz(3,5);
 
         // when
         String output = fizzBuzz.processNumber(10);
@@ -102,7 +102,7 @@ public class FizzBuzzTest {
     @Test
     public void shouldProcessInput_15() {
         // given
-        FizzBuzz fizzBuzz = new FizzBuzz();
+        FizzBuzz fizzBuzz = new FizzBuzz(3,5);
 
         // when
         String output = fizzBuzz.processNumber(15);
@@ -110,4 +110,20 @@ public class FizzBuzzTest {
         // then
         assertThat(output, is("FizzBuzz"));
     }
+
+    @Test
+    public void shouldProcessInput_27() {
+        // given
+        FizzBuzz fizzBuzz = new FizzBuzz(2,7);
+
+        // when
+
+        // then
+        assertThat(fizzBuzz.processNumber(2), is("Fizz"));
+        assertThat(fizzBuzz.processNumber(3), is("3"));
+        assertThat(fizzBuzz.processNumber(4), is("Fizz"));
+        assertThat(fizzBuzz.processNumber(7), is("Buzz"));
+        assertThat(fizzBuzz.processNumber(14), is("FizzBuzz"));
+    }
+
 }

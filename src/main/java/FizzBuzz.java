@@ -1,5 +1,13 @@
 public class FizzBuzz {
 
+    private int fizzNumber;
+    private int buzzNumber;
+
+    public FizzBuzz(int fizzNumber, int buzzNumber) {
+        this.fizzNumber = fizzNumber;
+        this.buzzNumber = buzzNumber;
+    }
+
     public String processNumber(int input) {
         if (isModulo3(input) && isModulo5(input)) {
             return "FizzBuzz";
@@ -17,10 +25,10 @@ public class FizzBuzz {
     }
 
     private boolean isModulo3(int input) {
-        return input % 3 == 0;
+        return input % fizzNumber == 0;
     }
 
     private boolean isModulo5(int input) {
-        return input % 5 == 0;
+        return input % buzzNumber == 0;
     }
 }
