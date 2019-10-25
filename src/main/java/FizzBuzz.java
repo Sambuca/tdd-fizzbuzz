@@ -9,26 +9,26 @@ public class FizzBuzz {
     }
 
     public String processNumber(int input) {
-        if (isModulo3(input) && isModulo5(input)) {
+        if (isFizz(input) && isBuzz(input)) {
             return "FizzBuzz";
         }
 
-        if (isModulo3(input)) {
+        if (isFizz(input)) {
             return "Fizz";
         }
 
-        if (isModulo5(input)) {
+        if (isBuzz(input)) {
             return "Buzz";
         }
 
         return String.valueOf(input);
     }
 
-    private boolean isModulo3(int input) {
+    private boolean isFizz(int input) {
         return input % fizzNumber == 0;
     }
 
-    private boolean isModulo5(int input) {
+    private boolean isBuzz(int input) {
         return input % buzzNumber == 0;
     }
 }

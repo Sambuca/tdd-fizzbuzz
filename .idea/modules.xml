@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Temp-tdd-fizzbuzz.iml" filepath="$PROJECT_DIR$/.idea/modules/Temp-tdd-fizzbuzz.iml" group="tdd-fizzbuzz" />
+      <module fileurl="file://$PROJECT_DIR$/tdd-fizzbuzz.iml" filepath="$PROJECT_DIR$/tdd-fizzbuzz.iml" group="tdd-fizzbuzz" />
+    </modules>
+  </component>
+</project>
